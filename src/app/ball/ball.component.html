@@ -1,0 +1,75 @@
+<div id="wrapper">
+    <label for="color">Color:</label>
+    <select name="color" (change)="onColorChange($event.target.value)">
+        <option value="indigo">Indigo</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="lime">Lime</option>
+        <option value="green">Green</option>
+        <option value="aqua">Aqua</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="pink">Pink</option>
+        <option value="magenta">Magenta</option>
+        <option value="gold">Gold</option>
+        <option value="violet">Violet</option>
+        <option value="black">Black</option>
+    </select>
+    <label for="gravity">Gravity:</label>
+    <select name="gravity" (change)="gravity=$event.target.value;start()">
+        <option value=1>Earth(1)</option>
+        <option value=0.16>Moon(0.16)</option>
+        <option value=27>Sun(27)</option>
+        <option value=0.38>Mars(0.38)</option>
+        <option value=0.91>Venus(0.91)</option>
+        <option value=0.38>Mercury(0.38)</option>
+        <option value=2.54>Jupiter(2.54)</option>
+        <option value=1.07>Saturn(1.07)</option>
+        <option value=0.91>Uranus(0.91)</option>
+        <option value=1.14>Neptun(1.14)</option>
+        <option value=0.06>Pluto(0.06)</option>
+    </select>
+    <button id="start" (click)="start()">Start</button>
+    <button id="stop" (click)="stop()">Stop</button>
+</div>
+
+<div id="ball"></div>
+<div id="ground"></div>
+
+<!-- <div class="container-fluied">
+
+    <div id="wrapper">
+        <label for="colour">Colour</label>
+        <select name="colour" (change)="onColourChange()">
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="black">black</option>
+        </select>
+
+        <label for="gravity">Gravity</label>
+        <select>
+            <option value="1">Earth(1)</option>
+            <option value="0.16">Moon(0.16)</option>
+            <option value="27">Sun(27)</option>
+            <option value="0.38">Mars(0.38)</option>
+            <option value="0.9">Venus(0.91)</option>
+            <option value="0.38">Mercury(0.38)</option>
+            <option value="2.54">Jupiter(2.54)</option>
+            <option value="1.07">Saturn(1.07)</option>
+            <option value="1.14">Neptun(1.14)</option>
+            <option value="0.06">Pluto(0.06)</option>
+        </select>
+        <div class="">
+            <button type="button" class="btn btn-success " (click)="start()"> Start</button>
+            <button type="button" class="btn btn-danger" (click)="stop()">Stop</button>
+        </div>
+
+    </div>
+    <div id="ball"></div>
+    <div id="ground"></div>
+
+</div> -->
